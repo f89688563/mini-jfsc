@@ -1,0 +1,43 @@
+.weui-cells-row{
+    background-color: #FFF;
+}
+
+.weui-cells-row .weui-cell{
+    flex: 1;
+}
+
+.weui-cells-row .weui-cell .main{
+  text-align: left;
+  font-size: 11pt;
+}
+
+.weui-cells-row .weui-cell .weui-cell__bd{
+  margin-left: 16rpx;
+}
+
+.weui-cells-row .weui-cell .sub{
+  text-align: left;
+  color: #ddd;
+  font-size: 8pt;
+}
+
+.act{
+  text-align: center;
+  padding-top: 16rpx;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.hot{
+  color: red;
+}
+
+.page__desc{
+  text-align: center;
+}
+
+.img-large, .img-middle, .img-small, .img-min, .img-min-x{
+    margin-right: 0;
+}

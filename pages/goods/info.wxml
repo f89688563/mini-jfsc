@@ -1,0 +1,64 @@
+<view class="page">
+    <swiper indicator-dots autoplay interval="3000">
+        <block wx:for="{{info.logo}}" wx:key="">
+        <swiper-item>
+            <image src="{{item}}"></image>
+        </swiper-item>
+        </block>
+    </swiper>
+    <view class="weui-cells first no-border">
+        <view class="weui-cell">
+            <view class="weui-cell__bd">{{info.name}}</view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__bd">
+                <text class="price">¥{{info.price}}</text>
+                <text class="jf">+{{info.jf}}积分</text>
+            </view>
+            <view class="weui-cell__ft">
+                {{info.praise}}人点赞
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells no-border">
+        <view class="weui-cell" wx:for="{{info._standard}}" wx:key="">
+            <view class="weui-cell__hd">
+                <label class="weui-cell_label">{{standard[index]['name']}}</label>
+            </view>
+            <view class="weui-cell__bd">
+                <radio-group bindchange="radioChange">
+                    <label class="standard" wx:for="{{item}}" wx:key="" wx:for-item="i">
+                        <radio value="{{i}}" data-nnn="{{standard[i]['name']}}" />{{standard[i]['name']}}
+                    </label>
+                </radio-group>
+            </view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__hd">
+                <label class="weui-cell_label">数量</label>
+            </view>
+            <view class="weui-cell__bd">
+                <label class="decr" bindtap="decr">-</label>
+                <label class="num">{{count}}</label>
+                <label class="incr" bindtap="incr">+</label>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells__title center">-商品详情-</view>
+    <view class="weui-cells first">
+        <view class="weui-cell">
+            <image src="{{info.img}}"></image>
+        </view>
+    </view>
+    <view class="fix-bottom-box">
+        <view class="fix-bottom-item">
+            <view class="weui-btn weui-btn_default">
+                <navigator url="/pages/car/index">
+                    <image src="http://oojs4wpzp.bkt.clouddn.com/car.png" class="img-min-x"></image>
+                    <text> 购物车</text>
+                </navigator>
+            </view>
+            <view class="weui-btn weui-btn_confirm" bindtap="confirm">加入购物车</view>
+        </view>
+    </view>
+</view>

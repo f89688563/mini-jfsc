@@ -1,0 +1,27 @@
+
+.options{
+    margin-top: 0;
+    padding-top: 0;
+    height: 64rpx;
+}
+
+.decr, .num, .incr{
+    height: 44px;
+    line-height: 44px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #E2E2E2;
+}
+
+.decr{
+    margin-left: 16rpx;
+    border-right: none;
+}
+.num{
+    border-right: none;
+}
+
+.weui-btn_confirm{
+    max-width: 120px;
+}

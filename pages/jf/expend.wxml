@@ -1,0 +1,25 @@
+<view class="pages">
+    <view class="weui-cells first">
+        <view class="weui-media-box weui-media-box_appmsg">
+            <view class="weui-media-box__hd">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/jf.png" class="img-min"></image>
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">我的积分： 123</view>
+                <view class="weui-media-box__desc">积分可以兑换超值礼品哟~</view>
+            </view>
+            <view class="weui-cell__ft">
+                <navigator url="/pages/jf/gain" class="btn">赚积分</navigator>
+            </view>
+        </view>
+    </view>
+    <import src="/pages/common/goods.wxml"/>
+    <view class="weui-cells">
+        <view class="weui-cell">
+            <view class="weui-cell__hd">超值兑</view>
+            <view class="weui-cell__bd"></view>
+            <view class="weui-cell__ft" bindtap="call">我的客服</view>
+        </view>
+        <template is="goods" data="{{lists: goodsLists, loadding}}"/>
+    </view>
+</view>

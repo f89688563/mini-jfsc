@@ -1,0 +1,14 @@
+.options{
+    display: flex;
+}
+
+.options navigator{
+    margin-right: 16rpx;
+}
+
+.no-border{
+    flex-direction:column;
+}
+.no-border .weui-cell{
+    width: 100%;
+}

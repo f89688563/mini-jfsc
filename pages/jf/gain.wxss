@@ -1,0 +1,19 @@
+.btn{
+    font-size: 14px;
+    color: #fff;
+    background-color: #f26100;
+    padding: 8rpx 24rpx;
+    border: 1px;
+    border-radius: 8rpx;
+}
+.unfinish{
+    border: 1px solid #f26100;
+    color: #f26100;
+    padding: 8rpx 24rpx;
+    border-radius: 8rpx;
+    font-size: 17px;
+}
+
+.finish{
+    color: #8fc89a;
+}

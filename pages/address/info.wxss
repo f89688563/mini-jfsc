@@ -1,0 +1,9 @@
+.distpicker .weui-select{
+    padding-left: 0;
+    padding-right: 0;
+    border-right: none;
+    overflow:hidden;
+}
+.distpicker .weui-select::before{
+    border-style:none;
+}

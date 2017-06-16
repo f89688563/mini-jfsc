@@ -1,0 +1,25 @@
+<view class="pages">
+    <view class="weui-cells">
+        <view class="weui-cell no-border" wx:for="{{lists}}" wx:key="">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">{{item.username}}</view>
+                <view>{{item.phone}}</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__ft">{{item.province}}{{item.city}}{{item.district}}{{item.detail}}</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd desc">{{item.on_time}}</view>
+                <view class="weui-cell__ft options">
+                    <navigator url="info?id={{item.id}}">编辑</navigator>
+                    <view data-id="{{item.id}}" catchtap="del">删除</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="fix-bottom-box">
+        <view class="fix-bottom-item">
+            <navigator url="info" class="weui-btn weui-btn_confirm">新增</navigator>
+        </view>
+    </view>
+</view>

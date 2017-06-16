@@ -1,0 +1,33 @@
+.first{
+    font-size: 14px;
+}
+
+.price{
+    color: #f26100;
+    font-size: 17px;
+}
+
+.weui-cells .standard{
+    margin: 8rpx 16rpx;
+}
+
+.weui-cell_label{
+    margin-right: 24rpx;
+}
+
+.decr, .num, .incr{
+    height: 44px;
+    line-height: 44px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #E2E2E2;
+}
+
+.decr{
+    margin-left: 16rpx;
+    border-right: none;
+}
+.num{
+    border-right: none;
+}

@@ -1,0 +1,56 @@
+<view class="pages">
+    <view class="weui-cells first top">
+        <view class="weui-cell">
+            <view class="weui-cell__hd">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/gold.png" class="img-small"></image>
+            </view>
+            <view class="weui-cell__bd">
+                <view class="weui-cell__title">小鲲商城会员</view>
+                <view class="weui-cell__desc">
+                    <navigator url="/pages/record/index">积分：123</navigator>
+                    <navigator url="/pages/jf/help" class="zjf">怎么赚积分？</navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells order">
+        <view class="weui-cell center">
+            <navigator url="/pages/order/index?st=wait" class="weui-cell__bd" hover-class="none">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/user_pending-payment.png" class="img-middle"></image>
+                <view class="classname">待收款</view>
+            </navigator>
+            <navigator url="/pages/order/index?st=send" class="weui-cell__bd" hover-class="none">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/user_shipped.png" class="img-middle"></image>
+                <view class="classname">待收货</view>
+            </navigator>
+            <navigator url="/pages/order/index" class="weui-cell__bd" hover-class="none">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/user_all.png" class="img-middle"></image>
+                <view class="classname">全部订单</view>
+            </navigator>
+        </view>
+    </view>
+    <view class="weui-cells">
+        <navigator url="/pages/user/info" class="weui-cell weui-cell_access">
+            <view class="weui-cell__bd">个人信息</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator url="/pages/address/index" class="weui-cell weui-cell_access">
+            <view class="weui-cell__bd">地址管理</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+    </view>
+    <view class="weui-cells">
+        <navigator url="/pages/user/info" class="weui-cell weui-cell_access">
+            <view class="weui-cell__bd">反馈</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <view bindtap="call" class="weui-cell weui-cell_access">
+            <view class="weui-cell__bd">我的客服</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+        <navigator url="/pages/address/index" class="weui-cell weui-cell_access">
+            <view class="weui-cell__bd">关于</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+    </view>
+</view>

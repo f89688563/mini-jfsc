@@ -1,0 +1,16 @@
+<import src="/pages/common/load.wxml"/>
+<template name="goods">
+    <block wx:for="{{lists}}"  wx:key="">
+        <view class="weui-cell-inline">
+            <navigator url="/pages/goods/info?id={{item.id}}">
+                <image src="{{item.corver}}" class="img-large"></image>
+                <view class="goods_desc">
+                    <view class="name">{{item.name}}</view>
+                    <view class="price">{{item.jf}}积分+¥{{item.price}}</view>
+                    <view class="remain">剩余 <text>{{item.remain}}</text> 份</view>
+                </view>
+            </navigator>
+        </view>
+    </block>
+    <template is="load" data="{{loadding}}"/>
+</template>

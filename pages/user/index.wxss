@@ -1,0 +1,26 @@
+.top{
+    background-image: url(http://oojs4wpzp.bkt.clouddn.com/user_back.png);
+    color: #FFF;
+}
+
+.top .weui-cell__hd{
+    margin-right: 24rpx;
+}
+
+.top .weui-cell__desc{
+    display: flex;
+    font-size: 12px;
+    margin-top: 12rpx;
+}
+
+.top .weui-cell__desc .zjf{
+	margin-left: 16rpx;
+}
+
+.order{
+    margin-top:-1px;
+}
+
+.img-middle{
+    margin-right: 0;
+}

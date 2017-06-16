@@ -1,0 +1,37 @@
+<view class="pages">
+    <view class="weui-cells">
+        <view class="weui-media-box weui-media-box__appmsg">
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg center">
+                <view class="weui-media-box__title">应付金额：¥{{info.total}}</view>
+                <view class="weui-media-box__desc">含运费：¥{{info.fare}}</view>
+            </view>
+        </view>
+        <checkbox-group bindchange="checkboxChange">
+            <label class="weui-cell weui-check__label">
+                <checkbox class="weui-check" value="1" />
+                <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                    <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!ded}}"></icon>
+                    <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{ded}}"></icon>
+                </view>
+                <view class="weui-cell__bd">积分抵扣</view>
+                <view class="weui-cell__ft">123</view>
+            </label>
+        </checkbox-group>
+    </view>
+    <view class="weui-cells">
+        <radio-group bindchange="radioChange">
+            <label class="weui-cell weui-check__label" wx:for="{{pay}}" wx:key="">
+                <radio class="weui-check" value="{{item.value}}"/>
+                <view class="weui-cell__bd">{{item.name}}</view>
+                <view class="weui-cell__ft weui-cell__ft_in-radio" >
+                    <icon class="weui-icon-radio" type="success_no_circle" size="16" wx:if="{{payType==item.value}}"></icon>
+                </view>
+            </label>
+        </radio-group>
+    </view>
+    <view class="fix-bottom-box">
+        <view class="fix-bottom-item">
+            <view class="weui-btn weui-btn_confirm">提交订单</view>
+        </view>
+    </view>
+</view>

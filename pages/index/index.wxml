@@ -1,0 +1,70 @@
+<import src="/pages/common/goods.wxml"/>
+<view class="page">
+  <view class="weui-cells first">
+    <view class="weui-cell">
+      <view class="weui-cell__hd" style="margin-right: 16rpx;">
+        <image src="http://oojs4wpzp.bkt.clouddn.com/index_jf.png" class="img-min"></image>
+      </view>
+      <navigator url="/pages/record/index" class="weui-cell__bd" hover-class="none">
+        当前积分：123
+      </navigator>
+      <navigator url="/pages/user/index" class="weui-cell__ft" hover-class="none">
+        <image src="http://oojs4wpzp.bkt.clouddn.com/user_default_icon.png" class="img-min"></image>
+      </navigator>
+    </view>
+  </view>
+  <swiper indicator-dots autoplay interval="3000">
+    <block wx:for="{{imgUrls}}" wx:key="">
+      <swiper-item>
+        <navigator url="{{item.url ? item.url : '/pages/'+item.type+'/info?id='+item.iid}}" hover-class="none">
+          <image src="{{item.corver}}"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="weui-cells-row no-border">
+      <navigator url="/pages/jf/gain" class="weui-cell">
+        <view class="weui-cell__hd">
+          <image class="img-small" src="http://oojs4wpzp.bkt.clouddn.com/index_gain.png"></image>
+        </view>
+        <view class="weui-cell__bd">
+          <view class="main">赚积分</view>
+          <view class="sub">手指点点很轻松</view>
+        </view>
+      </navigator>
+      <navigator url="/pages/jf/expend" class="weui-cell">
+        <view class="weui-cell__hd">
+          <image class="img-small" src="http://oojs4wpzp.bkt.clouddn.com/index_expend.png"></image>
+        </view>
+        <view class="weui-cell__bd">
+          <view class="main">花积分</view>
+          <view class="sub">更多奖品等你兑</view>
+        </view>
+      </navigator>
+  </view>
+  <view class="weui-cells no-border act">
+    <view><text class="bold">积分活动</text><text class="hot"> HOT</text></view>
+    <view class="weui-cell">
+      <navigator url="/pages/share/index" class="weui-cell__bd">
+        <image class="img-middle" src="http://oojs4wpzp.bkt.clouddn.com/index_share.png"></image>
+        <view class="page__desc">分享有礼</view>
+      </navigator>
+      <navigator url="/pages/red/index" class="weui-cell__bd">
+        <image class="img-middle" src="http://oojs4wpzp.bkt.clouddn.com/index_redpack.png"></image>
+        <view class="page__desc">抢红包</view>
+      </navigator>
+      <navigator url="/pages/punch/index" class="weui-cell__bd">
+        <image class="img-middle" src="http://oojs4wpzp.bkt.clouddn.com/index_punch.png"></image>
+        <view class="page__desc">打卡</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <view class="weui-cell__hd">超值兑</view>
+      <view class="weui-cell__bd"></view>
+      <view class="weui-cell__ft"><navigator url="/pages/goods/index">更多</navigator></view>
+    </view>
+    <template is="goods" data="{{lists: goodsLists, loadding}}"/>
+  </view>
+</view>

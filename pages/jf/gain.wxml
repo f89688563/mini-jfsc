@@ -1,0 +1,67 @@
+<view class="pages">
+    <view class="weui-cells first">
+        <view class="weui-media-box weui-media-box_appmsg">
+            <view class="weui-media-box__hd">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/jf.png" class="img-min"></image>
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">我的积分：123</view>
+                <view class="weui-media-box__desc">积分可以兑换超值礼品哟~</view>
+            </view>
+            <view class="weui-cell__ft">
+                <navigator url="/pages/jf/expend"  class="btn">兑换</navigator>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells">
+        <view class="weui-media-box weui-media-box_appmsg">
+            <view class="weui-media-box__hd">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/jf_punch.png" class="img-small"></image>
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">每日打卡</view>
+                <view class="weui-media-box__desc">连续打卡7日，积分翻3倍</view>
+            </view>
+            <view class="weui-cell__ft">
+                <view class="finish" wx:if="{{punched}}">已打卡{{punched}}天</view>
+                <view class="unfinish" wx:if="{{!punched}}" bindtap="punch">打卡</view>
+            </view>
+        </view>
+        <view class="weui-media-box weui-media-box_appmsg">
+            <view class="weui-media-box__hd">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/jf_redpack.png" class="img-small"></image>
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">抢红包</view>
+                <view class="weui-media-box__desc">每天免费抽大奖</view>
+            </view>
+            <view class="weui-cell__ft">
+                <navigator url="/pages/red/index" class="unfinish">抢红包</navigator>
+            </view>
+        </view>
+        <view class="weui-media-box weui-media-box_appmsg">
+            <view class="weui-media-box__hd">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/jf_zf.png" class="img-small"></image>
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">转发有礼</view>
+                <view class="weui-media-box__desc">分享好友即可获积分</view>
+            </view>
+            <view class="weui-cell__ft">
+                <navigator url="/pages/activity/index" class="unfinish">转发有礼</navigator>
+            </view>
+        </view>
+        <view class="weui-media-box weui-media-box_appmsg">
+            <view class="weui-media-box__hd">
+                <image src="http://oojs4wpzp.bkt.clouddn.com/jf_activity.png" class="img-small"></image>
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                <view class="weui-media-box__title">活动积分</view>
+                <view class="weui-media-box__desc">精选活动，积分等你领</view>
+            </view>
+            <view class="weui-cell__ft">
+                <navigator url="/pages/activity/index" class="unfinish">加积分</navigator>
+            </view>
+        </view>
+    </view>
+</view>

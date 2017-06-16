@@ -1,0 +1,5 @@
+<template name="load">
+  <view class="center" hidden="{{loadding}}" style="padding: 16rpx">
+    <text>加载更多...</text>
+  </view>
+</template>

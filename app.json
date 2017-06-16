@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/goods/index",
+    "pages/goods/info",
+    "pages/car/index",
+    "pages/order/index",
+    "pages/order/confirm",
+    "pages/order/info",
+    "pages/jf/gain",
+    "pages/jf/expend",
+    "pages/jf/help",
+    "pages/share/index",
+    "pages/share/info",
+    "pages/activity/index",
+    "pages/activity/info",
+    "pages/red/index",
+    "pages/red/record",
+    "pages/punch/index",
+    "pages/record/index",
+    "pages/address/index",
+    "pages/address/info",
+    "pages/user/index",
+    "pages/user/info"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "积分商城",
+    "navigationBarTextStyle":"black"
+  }
+}
